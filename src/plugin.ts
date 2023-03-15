@@ -18,11 +18,7 @@ export default class ModuleCache implements PluginClass {
 		ig._loadScript = this._loadScript.bind(this);
 	}
 
-	preload() {
-		console.log("test");
-	}
-
-	_loadScript(moduleName: string, requirer: string) {
+	_loadScript(moduleName: string, requirer?: string) {
 		if (moduleName.includes(".")) {
 			const root = moduleName.split(".")[0];
 			let path: string;
