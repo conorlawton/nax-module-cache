@@ -2,7 +2,8 @@
 	"include": [
 		"src",
 		"node_modules/ultimate-crosscode-typedefs/crosscode-ccloader-all.d.ts",
-		"src/assets/**.*"
+		"src/assets/**.*",
+		"*.d.ts"
 	],
 	"compilerOptions": {
 		"sourceMap": true,
